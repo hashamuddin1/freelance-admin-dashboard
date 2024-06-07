@@ -1,0 +1,13 @@
+.submitBtn {
+  background-color: blue !important;
+}
+
+.logoutBtn:hover {
+  background-color: blue !important;
+  color: white;
+}
+
+.deletedBtn:hover {
+  background-color: white !important;
+  color: red;
+}
