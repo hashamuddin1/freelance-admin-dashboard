@@ -16,9 +16,9 @@ import { useNavigate } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import Button from "@mui/material/Button";
 import PersonIcon from "@mui/icons-material/Person";
-import WorkIcon from "@mui/icons-material/Work";
-import ErrorIcon from "@mui/icons-material/Error";
-import PolicyIcon from "@mui/icons-material/Policy";
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import CallIcon from '@mui/icons-material/Call';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import "../App.css";
 
 const drawerWidth = 240;
@@ -170,7 +170,7 @@ export default function Navbar() {
                   justifyContent: "center",
                 }}
               >
-                <PersonIcon sx={{ color: "white" }} />
+                <AccountTreeIcon sx={{ color: "white" }} />
               </ListItemIcon>
               <ListItemText primary="Orders" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
@@ -196,7 +196,7 @@ export default function Navbar() {
                   justifyContent: "center",
                 }}
               >
-                <PersonIcon sx={{ color: "white" }} />
+                <QuestionMarkIcon sx={{ color: "white" }} />
               </ListItemIcon>
               <ListItemText primary="Question" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
@@ -222,7 +222,7 @@ export default function Navbar() {
                   justifyContent: "center",
                 }}
               >
-                <PersonIcon sx={{ color: "white" }} />
+                <CallIcon sx={{ color: "white" }} />
               </ListItemIcon>
               <ListItemText primary="Contacts" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>

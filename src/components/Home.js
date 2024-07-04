@@ -135,6 +135,42 @@ export default function Home() {
                 </Card>
               </Grid>
             </Grid>
+            <Grid item xs={12} md={12} lg={12}>
+              <h3 style={{ textAlign: "center" }}>App Stats</h3>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <Bar
+                  style={{ width: "100%" }}
+                  data={{
+                    labels: [
+                      "Pending Projects",
+                      "Completed Projects",
+                      "Agents",
+                      "Clients",
+                      "Issues",
+                    ],
+                    datasets: [
+                      {
+                        label: "ApplicationStats",
+                        data: [
+                          data.data.fetchAllPendingOrder,
+                          data.data.fetchAllCompletedOrder,
+                          data.data.fetchAllAgent,
+                          data.data.fetchAllClient,
+                          data.data.fetchAllIssue,
+                        ],
+                        backgroundColor: [
+                          "blue",
+                          "blue",
+                          "blue",
+                          "blue",
+                          "blue",
+                        ],
+                      },
+                    ],
+                  }}
+                />
+              </div>
+            </Grid>
           </Box>
         </Box>
       </>
